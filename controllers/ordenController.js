@@ -166,7 +166,7 @@ exports.obtenerOrdenes = async (req, res) => {
 exports.obtenerOrdenesPendientes = async (req, res) => {
     try {
         const ordenes = await Orden.find({
-            estado: 'pendiente'
+            estado: 'Pendiente'
         });
         res.json({
             message: 'Lista de órdenes pendientes',
